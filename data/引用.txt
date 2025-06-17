@@ -1,0 +1,4 @@
+BGM:https://maou.audio/
+SE:https://soundeffect-lab.info/
+クリアBGM：https://www.dova-s.jp//bgm/play18024.html
+オバーBGM：https://dova-s.jp/bgm/play6152.html

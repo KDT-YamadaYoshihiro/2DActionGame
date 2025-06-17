@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\System.cpp">
+      <UniqueIdentifier>{7b5be2c3-079a-4430-8079-70f188aab9b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System.h">
+      <UniqueIdentifier>{89037870-ee4d-4c3a-a0ce-d8ccebdaed09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Class.h">
+      <UniqueIdentifier>{721dd7f6-020d-4817-ada5-24549454c20b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Class.cpp">
+      <UniqueIdentifier>{f46da13d-58cb-4f93-a2d7-8a02604c39c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sourcefile\Base.cpp">
+      <Filter>ソース ファイル\Class.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\Hit.cpp">
+      <Filter>ソース ファイル\System.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\InPutKey.cpp">
+      <Filter>ソース ファイル\System.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\InPutPad.cpp">
+      <Filter>ソース ファイル\System.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\WinMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\Float2.cpp">
+      <Filter>ソース ファイル\System.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\character.cpp">
+      <Filter>ソース ファイル\Class.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\Enemy.cpp">
+      <Filter>ソース ファイル\Class.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\Flame.cpp">
+      <Filter>ソース ファイル\Class.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\Ken.cpp">
+      <Filter>ソース ファイル\Class.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\Load.cpp">
+      <Filter>ソース ファイル\Class.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\Player.cpp">
+      <Filter>ソース ファイル\Class.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\Stage.cpp">
+      <Filter>ソース ファイル\Class.cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sourcefile\WinMain.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Base.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\character.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Enemy.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Flame.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Hit.h">
+      <Filter>ヘッダー ファイル\System.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\InPutKey.h">
+      <Filter>ヘッダー ファイル\System.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\InPutPad.h">
+      <Filter>ヘッダー ファイル\System.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Ken.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Load.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Player.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Stage.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Float2.h">
+      <Filter>ヘッダー ファイル\System.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\typedef.h">
+      <Filter>ヘッダー ファイル\System.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\Weapon.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\CTecture.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\CTectureFactry.h">
+      <Filter>ヘッダー ファイル\Class.h</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>
