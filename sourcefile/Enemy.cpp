@@ -238,7 +238,7 @@ void CEnemy::Draw(int enemyGrh, int flareGrh)
 	DrawCircle(CyclePosX, CyclePosY, CycleSize, GetColor(125, 125, 125), true);
 
 	// HP
-	CChar::Draw(WINDOW_W - 50.0f, 20.0f, -this->hp, -EHPMAX);
+	CChar::DrawHp(WINDOW_W - 50.0f, 20.0f, -this->hp, -EHPMAX);
 	// ブレイクゲージ
 	DrawBox((WINDOW_W - 50) - (stunNum*4), 60, WINDOW_W - 50, 80, GetColor(0, 0, 255),true);
 	DrawBox((WINDOW_W - 50) - 400, 60, WINDOW_W - 50, 80, GetColor(255, 255, 255), false);

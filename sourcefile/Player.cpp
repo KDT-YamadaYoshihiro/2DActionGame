@@ -146,20 +146,10 @@ void CPlayer::Update(float eX, float eY, int eSize)
 	// 移動制限
 	MoveRestrict();
 	
-	// 攻撃関数
-	if ((flag != ATTACK && flag != SKILL1 && flag != SKILL2) && IsKeyOn(KEY_INPUT_A) && AtCool <= ZEROFRAME) {
-		flag = ATTACK;
-		frame = SECONDS;
-	}
-	if ((flag != ATTACK && flag != SKILL1 && flag != SKILL2) && IsKeyOn(KEY_INPUT_S) && Sk1Cool <= ZEROFRAME) {
-		flag = SKILL1;
-		frame = SECONDS;
-	}
-	if ((flag != ATTACK && flag != SKILL1 && flag != SKILL2) && IsKeyOn(KEY_INPUT_D) && Sk2Cool <= ZEROFRAME) {
-		flag = SKILL2;
-		frame = SECONDS;
-	}
+	// キー入力
+	InputKey();
 
+	// 攻撃関数
 	if (flag == ATTACK) { Attack(); }
 	if (flag == SKILL1 || flag == SKILL2) { Skill(); }
 
@@ -175,7 +165,7 @@ void CPlayer::Draw(int grh)
 	DrawRotaGraph(posX, posY, rate, angle, grh, TRUE, tran);
 
 	// HP
-	CChar::Draw(10.0f, WINDOW_H - 50.0f, this->hp , PHPMAX);
+	DrawHp(10.0f, WINDOW_H - 50.0f, this->hp , PHPMAX);
 
 	// スキルクールタイム
 	for (int i = 0; i < 3; i++) {
@@ -335,6 +325,25 @@ void CPlayer::MoveRestrict()
 		posY = WINDOW_H - IMGSIZE_H / 2;
 	}
 }
+
+// キー入力
+void CPlayer::InputKey()
+{
+	if ((flag != ATTACK && flag != SKILL1 && flag != SKILL2) && IsKeyOn(KEY_INPUT_A) && AtCool <= ZEROFRAME) {
+		flag = ATTACK;
+		frame = SECONDS;
+	}
+	if ((flag != ATTACK && flag != SKILL1 && flag != SKILL2) && IsKeyOn(KEY_INPUT_S) && Sk1Cool <= ZEROFRAME) {
+		flag = SKILL1;
+		frame = SECONDS;
+	}
+	if ((flag != ATTACK && flag != SKILL1 && flag != SKILL2) && IsKeyOn(KEY_INPUT_D) && Sk2Cool <= ZEROFRAME) {
+		flag = SKILL2;
+		frame = SECONDS;
+	}
+
+}
+
 // 攻撃関数
 void CPlayer::Attack()
 {

@@ -53,7 +53,7 @@ public:
 	virtual ~CChar() {};
 
 	// キャラクターHP表記
-	virtual void Draw(float x, float y, int hp, int HP);
+	virtual void DrawHp(float x, float y, int hp, int HP);
 
 };
 

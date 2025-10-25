@@ -81,6 +81,8 @@ public:
 	void Operation();
 	// 移動上限関数
 	void MoveRestrict();
+	// 攻撃キー入力
+	void InputKey();
 	// 攻撃関数
 	void Attack();
 	// スキル関数

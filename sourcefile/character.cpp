@@ -1,6 +1,6 @@
 #include "character.h"
 
-void CChar::Draw(float x, float y, int hp ,int HP)
+void CChar::DrawHp(float x, float y, int hp ,int HP)
 {
 	// íÜêg
 	DrawBox(x, y, x + (hp * HPSIZEW), y + HPSIZEH, GREEN, TRUE);
